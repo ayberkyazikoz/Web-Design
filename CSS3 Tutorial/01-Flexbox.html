@@ -15,10 +15,8 @@
             width: 75%;
             margin: 0 auto;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
             min-height: 600px;
             background: black;
         }
@@ -30,23 +28,32 @@
             border: 1px solid black;
             margin: 10px;
         }
+        .box-1 {
+            /* order: 3; */
+            background: red;
+            /* flex-grow: 1; */
+        }
+        .box-2 {
+            /* order: 1; */
+            background: blue;
+            /* align-self: flex-start; */
+            /* flex-grow: 1; */
+            flex: 1;
+        }
+        .box-3 {
+            /* order: 2; */
+            background: green;
+            /* flex-grow: 3; */
+            flex: 1;
+        }
     </style>
 </head>
 <body>
     <!-- Flex Container -->
     <div class="container">
-        <div class="box">
-            <h1>Article 1</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="box">
-            <h1>Article 2</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="box">
-            <h1>Article 3</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
     </div>
 </body>
 </html>
