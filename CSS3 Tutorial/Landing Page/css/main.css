@@ -10,6 +10,9 @@ a {
 html {
     font-family: "Open Sans", sans-serif;
 }
+
+/* Navbar Section*/
+
 #navbar {
     color: #fff;
     display: flex;
@@ -29,4 +32,15 @@ html {
 #navbar ul li a:hover {
     background: #336ea2;
     border-radius: 4px;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
 }
